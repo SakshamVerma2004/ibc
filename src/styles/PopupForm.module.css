@@ -1,0 +1,211 @@
+.popupFormParent {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  background-color: rgba(0, 0, 0, 0.476);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popupFormParent .form {
+  width: 500px;
+  background-color: #394c9b;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  transform: scale(0.8);
+}
+
+.showForm {
+  opacity: 1;
+  visibility: visible;
+}
+
+.showForm .form {
+  transform: scale(1);
+}
+
+.closeDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end !important;
+  margin-bottom: 10px;
+}
+
+/* .hideFormContentSection {
+  position: relative;
+  animation: dropTopRight 0.8s ease-in-out forwards;
+  transform-origin: bottom left;
+}
+
+@keyframes dropTopRight {
+  0% {
+    transform: translateY(0) rotateZ(0) scale(1);
+  }
+  100% {
+    transform: translateY(0) rotateZ(45deg) scale(0.5);
+  }
+} */
+
+.closeDiv img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.popupFormParent h3 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.popupFormParent * {
+  color: white;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.form p {
+  width: 90%;
+  margin: auto;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.form * {
+  z-index: 10;
+}
+
+.form {
+  position: relative;
+  overflow: hidden;
+}
+
+.form::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 200px 100vh 0;
+  border-color: transparent #fefefe transparent transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.15;
+}
+
+.form form {
+  margin-top: 25px;
+  z-index: 10;
+}
+
+.form div input {
+  position: relative;
+  z-index: 3;
+  width: 49%;
+  padding: 10px 10px 10px 15px;
+  border-radius: 5px;
+  height: 50px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+}
+
+.form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form div input:focus {
+  outline: none;
+}
+
+.form div input::placeholder {
+  color: white;
+}
+
+.form textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px 10px 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+}
+
+.form textarea::placeholder {
+  color: white;
+}
+
+.form textarea:focus {
+  outline: none;
+}
+
+.form button {
+  display: block;
+  margin: auto;
+  background-color: white;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 50px;
+  font-size: 16px;
+  color: #384490;
+  font-weight: 600;
+}
+
+.form button:hover {
+  animation: bounceAnimation 0.6s ease;
+  color: white;
+  background-color: #384490;
+  border-color: white;
+}
+
+@keyframes bounceAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media all and (max-width: 767px) {
+  .popupFormParent .form {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .popupFormParent h3 {
+    font-size: 20px;
+  }
+
+  .form p {
+    width: 100%;
+  }
+
+  .form textarea {
+    height: 150px;
+  }
+}

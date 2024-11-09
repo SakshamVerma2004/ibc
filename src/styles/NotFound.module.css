@@ -1,0 +1,36 @@
+.notFound {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound div {
+  width: 350px;
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.notFound h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.notFound h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.notFound p {
+  font-size: 15px;
+}
+
+.notFound a {
+  color: #384490;
+  text-decoration: none;
+  font-weight: 600;
+}

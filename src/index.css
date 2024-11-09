@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#logo_svg .fil6 {
+  fill: none;
+  fill-rule: nonzero;
+}
+
+#logo_svg .fil1 {
+  fill: #fefefe;
+}
+
+#logo_svg .fil4 {
+  fill: #fefefe;
+}
+
+#logo_svg .fil2 {
+  fill: #fefefe;
+  fill-rule: nonzero;
+}
+
+#logo_svg .fil0 {
+  fill: #fefefe;
+  fill-rule: nonzero;
+}
+
+#logo_svg .fil5 {
+  fill: url(#id1);
+}
+
+#logo_svg .fil3 {
+  fill: url(#id2);
+}

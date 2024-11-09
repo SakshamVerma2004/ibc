@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s all ease-in-out;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  object-fit: cover;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#logo_svg .fil6 {
+  fill: none;
+  fill-rule: nonzero;
+}
+
+#logo_svg .fil1 {
+  fill: #fefefe;
+}
+
+#logo_svg .fil4 {
+  fill: #fefefe;
+}
+
+#logo_svg .fil2 {
+  fill: #fefefe;
+  fill-rule: nonzero;
+}
+
+#logo_svg .fil0 {
+  fill: #fefefe;
+  fill-rule: nonzero;
+}
+
+#logo_svg .fil5 {
+  fill: url(#id1);
+}
+
+#logo_svg .fil3 {
+  fill: url(#id2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: none;
+}
+
+p,
+span,
+a,
+button, input, textarea {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+:root {
+  --primary-white: "#FEFEFE";
+  --primary-dark-blue: "#384490";
+  --primary-light-blue: "#394C9B";
+  --primary-yellow: "#FECD29";
+  --primary-orange: "#EB8136";
+  --primary-green: "#009954";
+}
+
+#holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

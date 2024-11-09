@@ -1,0 +1,177 @@
+.navbar {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.628);
+  position: sticky;
+  top: 0px;
+  left: 0;
+  z-index: 11;
+}
+
+.logoDiv img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.optionsDiv {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.optionsDiv a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -5px;
+}
+
+.optionsDiv a:hover {
+  border-bottom: 2px solid white;
+}
+
+.smallNavbar {
+  display: none;
+}
+
+.hamburgerParent {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.showHamburger {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hamburgerOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+.hamburgerContent {
+  width: 350px;
+  background-color: white;
+  height: 100%;
+  padding: 10px;
+  margin-right: -350px;
+}
+
+.showMenuContent {
+  margin-right: 0px;
+}
+
+.quickAccess {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #000000;
+}
+
+.quickAccess p {
+  font-weight: 600;
+  color: #000000;
+}
+
+.quickAccess img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.smallOptionsDiv a {
+  display: block;
+  margin-bottom: 18px;
+  text-decoration: none;
+  color: #384490;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media all and (max-width: 1500px) {
+  .navbar {
+    width: 1360px;
+  }
+
+  .optionsDiv {
+    width: 1000px;
+  }
+
+  .optionsDiv a {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .navbar {
+    width: 1240px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .navbar {
+    width: 1190px;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .navbar {
+    width: 95%;
+  }
+
+  .optionsDiv {
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  .optionsDiv a {
+    flex-shrink: 0;
+    margin: 0px 20px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+
+  .smallNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 18px 2.5%;
+    margin: auto;
+    background-color: #384490;
+    position: sticky;
+    top: 0px;
+    left: 0;
+    z-index: 12;
+  }
+
+  .hamburger {
+    width: 30px;
+    cursor: pointer;
+  }
+}

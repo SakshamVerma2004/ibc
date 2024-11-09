@@ -1,0 +1,11 @@
+.whiteButton {
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: #384490 !important;
+  background-color: white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  margin-top: 0px;
+  font-size: 15px;
+}

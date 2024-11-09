@@ -1,0 +1,265 @@
+:root {
+  --primary-white: "#FEFEFE";
+  --primary-dark-blue: "#384490";
+  --primary-light-blue: "#394C9B";
+  --primary-yellow: "#FECD29";
+  --primary-orange: "#EB8136";
+  --primary-green: "#009954";
+}
+
+/* .movingBg {
+  --primary: #40ccc7;
+  --secondary: #faebd2;
+  background: linear-gradient(
+      to right,
+      var(--primary) 0%,
+      var(--secondary) 100%
+    )
+    center center no-repeat;
+} */
+
+/* .movingBg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, var(--primary) 0%, transparent 60%);
+  background-size: 75vw 75vw;
+  background-repeat: no-reapeat;
+  animation: translate-cricle 15s linear infinite;
+} */
+
+@keyframes translate-cricle {
+  0% {
+    background-position: top 0 right 0;
+    opacity: 0.75;
+  }
+  33% {
+    background-position: top 100% right 0;
+    opacity: 1;
+  }
+  50% {
+    background-position: top 100% right 100%;
+    opacity: 0.9;
+  }
+  66% {
+    background-position: top 0 right 100%;
+    opacity: 1;
+  }
+  100% {
+    background-position: top 0 right 0;
+    opacity: 0.75;
+  }
+}
+
+.about {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 80px 0px;
+  position: relative;
+}
+
+.imageSection {
+  width: 48%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.showAnimationSection {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.animationSection:last-child {
+  transition-delay: 0.2s;
+}
+
+.imageSection div {
+  width: 49%;
+}
+
+.imageSection div img {
+  width: 100%;
+  height: 300px;
+}
+
+.imageSection div img:last-of-type {
+  margin-top: 8px;
+  margin-bottom: -6px;
+}
+
+.bigImage {
+  width: 49%;
+}
+
+.contentSection {
+  width: 48%;
+  position: relative;
+  z-index: 10;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contentSection.showAnimationSection {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.contentSection h4 {
+  display: inline;
+  padding-bottom: 5px;
+  color: #384490;
+  border-bottom: 3px solid #eb8136;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.contentSection h1 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 44px;
+}
+
+.aboutDesc {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.flexContent {
+  margin-top: 20px;
+}
+
+.flexContent div:not(.yellowLine) {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.yellowLine {
+  width: 30%;
+  height: 5px;
+  background-color: #394c9b;
+}
+
+.flexContent div p {
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+}
+
+@media all and (max-width: 1500px) {
+  .about {
+    width: 1360px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .about {
+    width: 1240px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .about {
+    width: 1190px;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .about {
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .about {
+    width: 95%;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .imageSection {
+    width: 100%;
+    order: 2;
+  }
+
+  .contentSection {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+
+  .imageSection div img {
+    width: 100%;
+    height: 351px;
+  }
+
+  .yellowLine {
+    width: 70%;
+  }
+
+  .flexContent div p {
+    text-align: left !important;
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .contentSection h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .about {
+    padding: 60px 0px 100px;
+  }
+
+  .contentSection h1 {
+    font-size: 25px;
+  }
+
+  .imageSection div img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .yellowLine {
+    width: 40%;
+  }
+
+  .flexContent div p {
+    text-align: left !important;
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .imageSection div img {
+    width: 100%;
+    height: 170px;
+  }
+
+  .imageSection div img:last-of-type {
+    margin-top: 2px;
+    margin-bottom: -6px;
+  }
+}
