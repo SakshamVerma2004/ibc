@@ -5,6 +5,7 @@ import infra2 from "../assets/infra2.jpg";
 import infra3 from "../assets/infra3.jpg";
 import infra4 from "../assets/infra4.jpg";
 import infra9 from "../assets/infra9.png";
+import left from "../assets/left.png";
 
 let Infrastructure = () => {
   const scrollContainerRef = useRef(null);
@@ -107,10 +108,10 @@ let Infrastructure = () => {
             </div>
             <div className={styles.navigationButtons}>
               <button className={styles.arrow} onClick={scrollLeft}>
-                {"<"}
+                <img src={left} alt="left"/>
               </button>
               <button className={styles.arrow} onClick={scrollRight}>
-                {">"}
+              <img src={left} alt="right" style={{rotate: "180deg"}}/>
               </button>
               {/* → ←  */}
             </div>

@@ -27,7 +27,7 @@
 .optionsDiv a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
   border-bottom: 2px solid transparent;
   margin-bottom: -5px;
 }
@@ -67,6 +67,7 @@
 
 .hamburgerContent {
   width: 350px;
+  flex-shrink: 0;
   background-color: white;
   height: 100%;
   padding: 10px;

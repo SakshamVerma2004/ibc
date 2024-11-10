@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "city": "testing",
+      "latitude": "1.000",
+      "longitude": "1.000",
+      "organization": "Airtel",
+      "zipcode": "000000",
+      "ip": "1.1.1.1",
+      "date": "0-0-0",
+      "time": "0:0:0 AM"
+    }
+  ]
+}

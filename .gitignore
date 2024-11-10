@@ -21,3 +21,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+
+
+https://api.ipgeolocation.io/ipgeo?apiKey=API_KEY
+
+-> 7446859e69024286833e93c63b768294

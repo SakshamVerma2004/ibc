@@ -5,6 +5,7 @@ import about1 from "../assets/about1.jpg";
 import about2 from "../assets/about2.jpg";
 import about3 from "../assets/about3.jpg";
 import { AuthContext } from "../context/AuthContentProvider";
+import bg from "../assets/whiteRibbonsBg.png";
 
 let About = () => {
   let [showForm, setShowForm] = useContext(AuthContext);

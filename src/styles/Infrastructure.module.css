@@ -17,7 +17,7 @@
 }
 
 .primeLocationBlue {
-  background-color: #384490;
+  background: linear-gradient(to right , #384490 , #030b39);
   position: relative;
   overflow: hidden;
 }
@@ -29,7 +29,7 @@
   width: 400px;
   height: 150px;
   transform: rotate(30deg);
-  background-color: #6173ec;
+  background-color: #030b3950;
 }
 
 .whiteSqaureSection2{
@@ -39,7 +39,7 @@
   width: 400px;
   height: 100px;
   transform: rotate(30deg);
-  background-color: #6173ec;
+  background-color: #263dbf50;
 }
 
 .imageSection {
@@ -118,7 +118,7 @@
 
 .aboutDesc {
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .flexContent {
@@ -174,7 +174,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 28px;
   background-color: white;
   border-radius: 50px;
   width: 40px;
@@ -183,6 +182,11 @@
   align-items: center;
   justify-content: center;
   color: #384490;
+}
+
+.arrow img{
+  width: 20px;
+  height: 20px;
 }
 
 @media all and (max-width: 1500px) {
@@ -257,5 +261,14 @@
 
   .flexContent div img {
     height: 250px;
+  }
+
+  .whiteSqaureSection{
+    width: 250px;
+    height: 100px;
+  }
+  
+  .whiteSqaureSection2{
+    width: 250px;
   }
 }

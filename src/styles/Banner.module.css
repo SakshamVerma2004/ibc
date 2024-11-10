@@ -1,5 +1,6 @@
 .banner {
   width: 100%;
+  height: 900px;
   margin-top: -100px;
   padding: 150px 0px;
   display: flex;
@@ -10,7 +11,28 @@
   background-size: cover;
   object-fit: cover;
   position: relative;
-  z-index: 10;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.bannerImg {
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  transform: scale(1);
+  transition: 0.5s all ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 4;
 }
 
 @keyframes bounceAnimation {
@@ -44,6 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 5;
 }
 
 .bannerContentSection {
@@ -84,7 +107,7 @@
 
 .bannerContentSection p {
   margin-top: 30px;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .bannerFormSection {
@@ -121,10 +144,11 @@
   height: 0;
   border-style: solid;
   border-width: 100px 200px 100vh 0;
-  border-color: transparent #717171 transparent transparent;
+  border-color: transparent #c2c1c1 transparent transparent;
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 3;
   opacity: 0.15;
 }
 
@@ -146,6 +170,7 @@
   background-color: transparent;
   color: #384490;
   font-size: 14px;
+  z-index: 4;
 }
 
 .bannerFormSection div input:focus {
@@ -188,6 +213,8 @@
   font-size: 16px;
   color: white;
   font-weight: 600;
+  position: relative;
+  z-index: 4;
 }
 
 .bannerFormSection button:hover {
@@ -208,10 +235,12 @@
 @media all and (max-width: 1240px) {
   .banner {
     margin-top: -120px;
+    height: 750px;
+    padding-top: 250px;
   }
 
-  .bannerContentSection {
-    align-items: center;
+  .bannerImg {
+    height: 800px;
   }
 
   .bannerContentSection h1 {
@@ -230,6 +259,10 @@
 @media all and (max-width: 767px) {
   .banner {
     margin-top: 0;
+  }
+
+  .bannerContentSection {
+    align-items: center;
   }
 }
 
@@ -289,6 +322,16 @@
 }
 
 @media all and (max-width: 800px) {
+  .banner {
+    margin-top: -120px;
+    height: auto;
+    padding-top: 170px;
+  }
+
+  .bannerImg {
+    height: 1200px;
+  }
+
   .bannerMain {
     flex-direction: column;
     row-gap: 50px;
@@ -310,7 +353,9 @@
 
 @media all and (max-width: 650px) {
   .banner {
-    padding: 70px 0px;
+    margin-top: 0;
+    padding: 50px 0px;
+    padding-bottom: 80px;
   }
 
   .bannerContentSection {

@@ -1,0 +1,69 @@
+.checking {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.checking * {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.checking table {
+  width: 90%;
+  border-collapse: collapse;
+  border: 2px solid #00273f;
+  background-color: #ffffff;
+}
+
+.checking table tbody th,
+.checking table tbody td {
+  padding: 15px 10px;
+  text-align: left;
+  border: 2px solid #4563d9;
+}
+
+.checking table thead th,
+.checking table thead td {
+  padding: 20px 10px;
+  text-align: left;
+  border: 2px solid #4563d9;
+}
+
+.checking thead tr th {
+  background-color: #181f4a;
+  color: white;
+  border: 2px solid #4563d9;
+}
+
+.checking table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.checking table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.checking table tr:hover {
+  background-color: #e6f2ff;
+}
+
+@media all and (max-width: 1200px) {
+  .checking {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 30px;
+    overflow-x: scroll;
+    height: auto;
+  }
+
+  .checking table {
+    width: 1200px !important;
+    flex-shrink: 0;
+  }
+}

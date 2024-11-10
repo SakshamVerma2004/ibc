@@ -28,10 +28,6 @@ import { AuthContext } from "../context/AuthContentProvider";
 let WaitingLoader = () => {
   let [showForm, setShowForm, showWaitingLoading, setShowWaitingLoading] =
     useContext(AuthContext);
-  useEffect(() => {
-    console.log("showWaitingLoading", showWaitingLoading);
-    // alert(showWaitingLoading);
-  }, [showWaitingLoading]);
   return (
     <div>
       <div

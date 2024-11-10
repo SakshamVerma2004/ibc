@@ -7,6 +7,25 @@
   --primary-green: "#009954";
 }
 
+.primeLocationBlue {
+  position: relative;
+  z-index: 1;
+}
+
+.primeLocationBlue::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/bgPatterns.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.04;
+  z-index: 2;
+}
+
 .primeLocation {
   width: 1440px;
   display: flex;
@@ -15,7 +34,6 @@
   margin: auto;
   padding: 80px 0px;
   position: relative;
-  z-index: 10;
   background-color: white;
 }
 
@@ -29,6 +47,8 @@
   top: 100px;
   opacity: 0;
   visibility: hidden;
+  position: relative;
+  z-index: 3;
 }
 
 .imageSection.showAnimationSection {
@@ -81,17 +101,26 @@
   margin-bottom: 20px;
   font-size: 16px;
   text-transform: uppercase;
+  position: relative;
+  z-index: 3;
+  background-color: white;
 }
 
 .contentSection h1 {
   margin-bottom: 30px;
   margin-top: 30px;
   font-size: 44px;
+  position: relative;
+  z-index: 3;
+  background-color: white;
 }
 
 .aboutDesc {
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 17px;
+  position: relative;
+  z-index: 3;
+  background-color: white;
 }
 
 .flexContent {
@@ -102,6 +131,9 @@
   padding-bottom: 10px;
   margin-bottom: 30px;
   border-bottom: 2px solid #eb8136;
+  position: relative;
+  z-index: 3;
+  background-color: white;
 }
 
 .flexContent div:last-of-type {
@@ -116,6 +148,8 @@
 
 .primeLocation button {
   margin-top: 0px;
+  position: relative;
+  z-index: 3;
 }
 
 @media all and (max-width: 1500px) {
