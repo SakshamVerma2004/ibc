@@ -12,7 +12,6 @@ let Checking = () => {
       .then((data) => {
         if (data) {
           let nestedObjects = Object.values(data);
-          console.log("Nested Objects Array:", nestedObjects);
           setData(nestedObjects);
         }
       });
