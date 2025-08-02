@@ -37,15 +37,11 @@ let Footer = () => {
           <h3>Contact Us</h3>
           <div>
             <img src={location} />
-            <p>Address</p>
-          </div>
-          <div>
-            <img src={phone} />
-            <p>Mobile Number</p>
+            <p>IT City Road, Near Tangori College, Mohali, Punjab 140601</p>
           </div>
           <div>
             <img src={mail} />
-            <p>Email</p>
+            <p>support.ibc@gmail.com</p>
           </div>
         </div>
         <div>
